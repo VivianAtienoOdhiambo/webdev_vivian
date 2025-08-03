@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif
+    line-height 1.6;
+    scroll-behavior: smooth;
+    background-color:#fff
+}
+header{
+    background-color: #f06292;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#hero{
+    background:#ffe0ec ;
+    padding: 60px 20px;
+    text-align: center;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+select {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+h2 {
+    color: #f06292;
+    margin-bottom: 15px;
+}
+.project-card {
+    background-color: #fff5f7;
+    border-left: 5px solid #f06292;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+ul li {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+a {
+    color: #f06292;
+}
+/* profile photo styling*/
+.image-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow:hidden;
+    position:relative;
+    margin: 15px auto;
+}
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* soft pink overlay on photo*/
+.image-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240,98,146,0.25); /*soft pink overlay */
+    mix-blend-mode: multiply;
+}
+/*responsive design*/
+@media(max-width: 600px){
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    
+}
+h1 {
+    font-size: 1.5rem;
+}
+section {
+
+    padding: 20px 15px;
+}
+.project-card{
+    font-size: 0.95rem;
+}
+
+
+
+}
